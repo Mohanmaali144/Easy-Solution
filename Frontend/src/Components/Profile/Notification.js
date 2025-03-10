@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBell, FaUserPlus, FaCheck, FaTimes } from "react-icons/fa";
-import SliderProfile from "./SliderProfile";
+import SliderProfile from "./SideBar";
 
 const initialRequests = [
     { id: 1, name: "Rahul Sharma", message: "Applied for Web Developer help." },
@@ -25,8 +25,6 @@ const ApplyRequestNotification = () => {
 
     return (
 
-        <div className="flex">
-            <SliderProfile />
             <div className="flex-1 p-5">
 
                 <div className="w-full h-screen bg-white shadow-md flex flex-col">
@@ -76,8 +74,6 @@ const ApplyRequestNotification = () => {
                     </div>
                 </div>
             </div>
-        </div>
-
     );
 };
 
