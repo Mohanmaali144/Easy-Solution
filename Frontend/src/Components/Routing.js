@@ -78,6 +78,7 @@ const Routing = () => {
       <Route path="/login" element={<SignIn />} />
       <Route path="/category" element={<CategoryPage />} />
 
+<<<<<<< HEAD
       {/* Protected Routes with Sidebar Layout */}
       <Route
         path="/account/*"
@@ -93,6 +94,15 @@ const Routing = () => {
           </SidebarComp>
         }
       />
+=======
+
+      {/* Protected Routes */}
+      <Route path="/account/dashboard" element={<ProtectedRoute element={<Dashboard />} />} />
+      <Route path="/account/profile" element={<ProtectedRoute element={<Profile />} />} />
+      <Route path="/account/help" element={<ProtectedRoute element={<HelpList />} />} />
+      <Route path="/account/prime" element={<ProtectedRoute element={<Prime />} />} />
+      <Route path="/account/notifications" element={<ProtectedRoute element={<Notification />} />} />
+>>>>>>> 31c5cba0fd154de8888518f490b074762aa72a90
 
       {/* 404 Page */}
       <Route path="*" element={<h2>Page Not Found</h2>} />
